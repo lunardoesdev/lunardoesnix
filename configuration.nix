@@ -322,6 +322,11 @@ hardware.bluetooth = {
     engrampa
     #llama-cpp
     #oils-for-unix
+
+
+    opencode
+    codex
+    claude-code
   ];
 
   networking.stevenblack.enable = true;
