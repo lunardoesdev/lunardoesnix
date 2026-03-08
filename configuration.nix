@@ -277,7 +277,7 @@ hardware.bluetooth = {
     strawberry
     ffmpeg-full
     i2pd
-    i2pd-tools
+    #i2pd-tools
     unrar
     libarchive
     showtime
