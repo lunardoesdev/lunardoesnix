@@ -78,11 +78,12 @@
   #services.desktopManager.cosmic.enable = true;
   
 services = {
-  desktopManager.plasma6.enable = true;
-  displayManager.sddm.enable = true;
-  displayManager.sddm.wayland.enable = true;
+  #desktopManager.plasma6.enable = true;
+  #displayManager.sddm.enable = true;
+  #displayManager.sddm.wayland.enable = true;
 
-  #desktopManager.gnome.enable = true;
+  desktopManager.gnome.enable = true;
+  displayManager.gdm.enable = true;
 };
 
 hardware.bluetooth = {
