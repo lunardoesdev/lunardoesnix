@@ -263,7 +263,7 @@ hardware.bluetooth = {
     #gnome-chess
     qtcreator
     qbittorrent
-    tribler
+    #tribler
     devenv
     blender
     gimp
