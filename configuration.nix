@@ -17,6 +17,7 @@
     set -U fish_greeting
     set -U fish_user_paths $HOME/.local/bin $HOME/.bun/bin
     ${pkgs.any-nix-shell}/bin/any-nix-shell fish --info-right | source
+    alias ls=eza
   '';
 
   # Bootloader.
