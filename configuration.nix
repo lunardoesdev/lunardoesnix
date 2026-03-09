@@ -335,6 +335,9 @@ hardware.bluetooth = {
 
     (pkgs.callPackage ./pkgs/notetask {})
     (pkgs.callPackage ./pkgs/vcard-studio {})
+
+    python3
+    pdm
   ];
 
   networking.stevenblack.enable = true;
