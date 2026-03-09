@@ -7,14 +7,22 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager }@inputs: {
+  outputs = { self, nixpkgs, home-manager }@inputs:
+  let
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+    localPkgs = pkgs.callPackage ./pkgs { };
+  in {
 
-    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
-
-    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
+    packages.${system} = {
+      hello = pkgs.hello;
+      notetask = localPkgs.notetask;
+      vcard-studio = localPkgs.vcard-studio;
+      default = self.packages.${system}.notetask;
+    };
 
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      system = system;
       specialArgs = {
         inherit inputs;
       };

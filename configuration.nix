@@ -327,6 +327,9 @@ hardware.bluetooth = {
     opencode
     codex
     claude-code
+
+    (pkgs.callPackage ./pkgs/notetask {})
+    (pkgs.callPackage ./pkgs/vcard-studio {})
   ];
 
   networking.stevenblack.enable = true;
