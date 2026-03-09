@@ -176,7 +176,7 @@ hardware.bluetooth = {
   programs.firefox.enable = true;
   programs.amnezia-vpn.enable = true;
 
-  #environment.variables.QT_FONT_DPI = "122";
+  environment.variables.QT_FONT_DPI = "122";
 
   #services.convos = {
   #  enable = true;
