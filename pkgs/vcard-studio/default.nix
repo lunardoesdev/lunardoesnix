@@ -57,16 +57,6 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  postFixup = ''
-    mv $out/bin/vCardStudio $out/bin/.vCardStudio-qt-wrapped
-    cat > $out/bin/vCardStudio <<EOF
-    #!${stdenv.shell}
-    cd $out/share/vCardStudio
-    exec $out/bin/.vCardStudio-qt-wrapped "$@"
-    EOF
-    chmod +x $out/bin/vCardStudio
-  '';
-
   meta = {
     description = "Contact manager with support for vCard files";
     homepage = "https://github.com/bitoffdev/vcard-studio";

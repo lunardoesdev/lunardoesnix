@@ -328,6 +328,9 @@ hardware.bluetooth = {
     codex
     claude-code
 
+    adwaita-icon-theme
+    gnome-tweaks
+
     (pkgs.callPackage ./pkgs/notetask {})
     (pkgs.callPackage ./pkgs/vcard-studio {})
   ];
