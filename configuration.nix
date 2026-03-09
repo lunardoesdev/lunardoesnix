@@ -338,6 +338,8 @@ hardware.bluetooth = {
 
     python3
     pdm
+
+    freetube
   ];
 
   networking.stevenblack.enable = true;
