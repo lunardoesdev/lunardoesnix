@@ -331,6 +331,8 @@ hardware.bluetooth = {
     adwaita-icon-theme
     gnome-tweaks
 
+    gnomeExtensions.appindicator
+
     (pkgs.callPackage ./pkgs/notetask {})
     (pkgs.callPackage ./pkgs/vcard-studio {})
   ];
