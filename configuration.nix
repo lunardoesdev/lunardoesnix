@@ -253,6 +253,8 @@ hardware.bluetooth = {
     clang
     sfml
     sdl3
+    
+    unison
 
     goldendict-ng
     calibre
